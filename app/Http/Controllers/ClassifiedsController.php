@@ -24,7 +24,8 @@ class ClassifiedsController extends Controller
 
     public function show($id)
     {
-         return view('show');  
+         $classified = classified::find($id);
+         return view('show', compact('classified'));  
     }
 
     public function edit($id)

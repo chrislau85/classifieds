@@ -13,7 +13,7 @@
             @foreach($classifieds as $classified)
                 <div class="col-md-4">
                     <img src="/images/{{$classified->main_image}}">
-                    <h4>{{$classified->title}}</h4>
+                    <h4><a href="/classifieds/{{$classified->id}}">{{$classified->title}}</a></h4>
                     <h5>{{$classified->price}}</h5>
                     <p>{{$classified->description}}</p>
                 </div>
